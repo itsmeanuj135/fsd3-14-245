@@ -75,7 +75,7 @@ const server = http.createServer(async (req, res) => {
       deleteTeam(id);
     return sendJson(res, 200, team, "Message", "Team deleted");
   }
-  else if (pathname === "/api/v1/teams" && method ==="PUT") {
+  else if (pathname === "/api/v1/teams" && method ==="DELETE") {
     const id = Number(pathname.split("/").pop());
       const Oldteam = getTeamByID(id);
   
