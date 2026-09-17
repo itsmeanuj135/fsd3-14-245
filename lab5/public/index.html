@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poetry | Words That Feel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #f8f4ed;
+            color: #2d2926;
+        }
+
+        /* Navbar */
+        nav {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            background: #fffaf3;
+            border-bottom: 1px solid #e5ddd2;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6b3f2d;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #443b36;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #a45c40;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(
+                rgba(248,244,237,0.8),
+                rgba(248,244,237,0.95)
+            );
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            color: #4d2e25;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            line-height: 1.7;
+            color: #6c625c;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #6b3f2d;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #4d2e25;
+        }
+
+        /* Featured Poetry */
+        .poetry {
+            padding: 80px 8%;
+            text-align: center;
+            background: #fffaf3;
+        }
+
+        .poetry h2 {
+            font-size: 42px;
+            color: #4d2e25;
+            margin-bottom: 45px;
+        }
+
+        .poem-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .poem-card {
+            width: 300px;
+            padding: 35px 25px;
+            background: #f8f4ed;
+            border-radius: 12px;
+            border: 1px solid #e4d9cb;
+            transition: 0.3s;
+        }
+
+        .poem-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .poem-card h3 {
+            font-size: 24px;
+            color: #6b3f2d;
+            margin-bottom: 18px;
+        }
+
+        .poem-card p {
+            line-height: 1.8;
+            color: #655c57;
+            font-size: 16px;
+        }
+
+        /* Quote */
+        .quote {
+            padding: 90px 15%;
+            text-align: center;
+            background: #6b3f2d;
+            color: white;
+        }
+
+        .quote p {
+            font-size: 30px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .quote span {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2d2926;
+            color: #ddd;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 0 5%;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .quote {
+                padding: 70px 10%;
+            }
+
+            .quote p {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Poetry.</div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#poems">Poems</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/enquiry">Enquiry</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Words That Feel.</h1>
+
+            <p>
+                Welcome to a place where thoughts become verses,
+                emotions become words, and silence finds its voice.
+            </p>
+
+            <a href="#poems" class="btn">Explore Poems</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Poems -->
+    <section class="poetry" id="poems">
+
+        <h2>Featured Poetry</h2>
+
+        <div class="poem-container">
+
+            <div class="poem-card">
+                <h3>Moonlight</h3>
+
+                <p>
+                    Under the quiet moon,<br>
+                    I found a piece of me,<br>
+                    hiding between the stars,<br>
+                    waiting to be free.
+                </p>
+            </div>
+
+
+            <div class="poem-card">
+                <h3>Unsaid Words</h3>
+
+                <p>
+                    Some words remain silent,<br>
+                    yet speak louder than sound,<br>
+                    living inside our hearts,<br>
+                    where they can always be found.
+                </p>
+            </div>
+
+
+            <div class="poem-card">
+                <h3>Journey</h3>
+
+                <p>
+                    The road may twist,<br>
+                    the skies may change,<br>
+                    but every step we take<br>
+                    makes the journey strange.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Quote Section -->
+    <section class="quote">
+
+        <p>
+            "Poetry is where the heart speaks
+            when ordinary words are not enough."
+        </p>
+
+        <span>— Poetry.</span>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="poetry" id="about">
+
+        <h2>About Poetry</h2>
+
+        <p style="max-width:700px; margin:auto; line-height:1.8; color:#655c57;">
+            Poetry is more than words arranged in lines.
+            It is emotion, imagination, memories and dreams
+            expressed through language. This space is dedicated
+            to poems that make you pause, think and feel.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <p>© 2026 Poetry. Made with words and emotions.</p>
+
+    </footer>
+
+</body>
+</html>
+

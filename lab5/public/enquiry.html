@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | Poetry</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f8f4ed;
+            color: #2d2926;
+        }
+
+        /* Navbar */
+        nav {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            background: #fffaf3;
+            border-bottom: 1px solid #e5ddd2;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6b3f2d;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #443b36;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #a45c40;
+        }
+
+        /* Heading */
+        .heading {
+            text-align: center;
+            padding: 70px 20px 30px;
+        }
+
+        .heading h1 {
+            font-size: 52px;
+            color: #4d2e25;
+            margin-bottom: 15px;
+        }
+
+        .heading p {
+            color: #6c625c;
+            font-size: 18px;
+        }
+
+        /* Form */
+        .form-container {
+            width: 90%;
+            max-width: 700px;
+            margin: 30px auto 80px;
+            padding: 40px;
+            background: #fffaf3;
+            border: 1px solid #e4d9cb;
+            border-radius: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4d2e25;
+            font-size: 16px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d8ccc0;
+            border-radius: 6px;
+            background: #fdfaf5;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #a45c40;
+        }
+
+        textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 30px;
+            background: #6b3f2d;
+            color: white;
+            font-size: 16px;
+            font-family: Georgia, "Times New Roman", serif;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #4d2e25;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2d2926;
+            color: #ddd;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 0 5%;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .heading h1 {
+                font-size: 42px;
+            }
+
+            .form-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Poetry.</div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="index.html#poems">Poems</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/enquiry">Enquiry</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Heading -->
+    <section class="heading">
+
+        <h1>Make an Enquiry</h1>
+
+        <p>
+            Have a question, suggestion, or want to share
+            something with us? Write to us.
+        </p>
+
+    </section>
+
+
+    <!-- Enquiry Form -->
+    <div class="form-container">
+
+        <form>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="subject">Enquiry Type</label>
+
+                <select id="subject">
+
+                    <option value="">Select an option</option>
+                    <option value="poem">Submit a Poem</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="general">General Enquiry</option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">Your Message</label>
+
+                <textarea
+                    id="message"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+                Send Enquiry
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Poetry. Made with words and emotions.</p>
+    </footer>
+
+</body>
+</html>
+
