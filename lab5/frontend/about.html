@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Poetry</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f8f4ed;
+            color: #2d2926;
+        }
+
+        /* Navbar */
+        nav {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            background: #fffaf3;
+            border-bottom: 1px solid #e5ddd2;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6b3f2d;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #443b36;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #a45c40;
+        }
+
+        /* About Hero */
+        .about-hero {
+            text-align: center;
+            padding: 90px 20px 50px;
+        }
+
+        .about-hero h1 {
+            font-size: 55px;
+            color: #4d2e25;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.8;
+            color: #6c625c;
+        }
+
+        /* Content */
+        .content {
+            max-width: 900px;
+            margin: 30px auto 80px;
+            padding: 45px;
+            background: #fffaf3;
+            border: 1px solid #e4d9cb;
+            border-radius: 12px;
+        }
+
+        .content h2 {
+            color: #6b3f2d;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #655c57;
+            line-height: 1.9;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        /* Mission Cards */
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+        }
+
+        .card {
+            width: 270px;
+            padding: 30px;
+            background: #fffaf3;
+            border: 1px solid #e4d9cb;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #6b3f2d;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #655c57;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2d2926;
+            color: #ddd;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 0 5%;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .about-hero h1 {
+                font-size: 42px;
+            }
+
+            .content {
+                margin: 20px;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Poetry.</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#poems">Poems</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- About Hero -->
+    <section class="about-hero">
+
+        <h1>About Us</h1>
+
+        <p>
+            A place where words become emotions,
+            thoughts become verses, and every poem
+            tells a story.
+        </p>
+
+    </section>
+
+
+    <!-- About Content -->
+    <section class="content">
+
+        <h2>Who We Are</h2>
+
+        <p>
+            Poetry is a creative space made for people who
+            love expressing their thoughts and emotions
+            through words. We believe that a few carefully
+            chosen words can express feelings that sometimes
+            remain difficult to say.
+        </p>
+
+        <h2>Our Purpose</h2>
+
+        <p>
+            Our purpose is to create a simple and peaceful
+            place where readers can discover poetry, explore
+            different emotions and connect with the thoughts
+            behind every verse.
+        </p>
+
+        <h2>Our Vision</h2>
+
+        <p>
+            We want to build a community where everyone can
+            appreciate poetry and share their own stories,
+            experiences and imagination through writing.
+        </p>
+
+    </section>
+
+
+    <!-- Cards -->
+    <section class="cards">
+
+        <div class="card">
+            <h3>Creativity</h3>
+            <p>
+                We encourage imagination and creative
+                expression through poetry.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Emotion</h3>
+            <p>
+                Every poem carries a feeling, a thought
+                or a story waiting to be discovered.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community</h3>
+            <p>
+                We believe poetry becomes more meaningful
+                when it is shared with others.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Poetry. Made with words and emotions.</p>
+    </footer>
+
+</body>
+</html>
