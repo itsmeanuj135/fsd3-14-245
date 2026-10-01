@@ -1,4 +1,5 @@
 import Book from "./components/Book";
+import Pen from "./components/Pen";
 
 const b1 = {
   picUrl:"https://m.media-amazon.com/images/I/81t9cbIICUL._AC_UY327_FMwebp_QL65_.jpg",
@@ -14,6 +15,19 @@ const b2 = {
   quantity:10,
   rating:4.8,
 };
+const p1 = {
+  picUrl:"https://m.media-amazon.com/images/I/618WT3o106L._AC_UL480_FMwebp_QL65_.jpg",
+  company:"Smooth Writex",
+  price:1190,
+  quantity:10,
+  
+};
+const p2 = {
+  picUrl:"https://m.media-amazon.com/images/I/61vyGGeHWNL._AC_UL480_FMwebp_QL65_.jpg",
+  company:"Super Pensonic ",
+  price:1190,
+  quantity:10,
+};
 
 
 export default function App() {
@@ -26,6 +40,8 @@ export default function App() {
   <Book book={b2} />
   <Book book = {b1} />
   <Book book = {b2} />
+  <Pen pen={p1} />
+  <Pen pen={p2} />
   </div>
   </>
 
