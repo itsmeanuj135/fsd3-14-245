@@ -19,4 +19,6 @@ If you are developing a production application, we recommend using TypeScript wi
 a. Simple Js functions return HTML directory
 B. it must starts with capital letter 
 c. it should be treated as html tag ,
-d. it must be closed 
+d. it must be closed .
+
+App.jsx must have minimum code.
