@@ -1,14 +1,17 @@
 import React from 'react'
 
 const products = [
-    {title: "Apple", id:1,isFruits:false},
-    {title: "Banana", id:2,isFruits:false},
-    {title: "Mango", id:3,isFruits:false},
-    {title: "Carrot", id:4,isFruits:true},
+    {title: "Apple", id:1,isFruits:true},
+    {title: "Banana", id:2,isFruits:true},
+    {title: "Potato", id:3,isFruits:false},
+    {title: "Cabbage", id:4,isFruits:false},
 
 ];
  const ListItem = products.map((item) => (
-    <li key ={item.id} className="fruits">{item.title}</li>
+    <li key ={item.id} style={{color: item.isFruits ? "red" : "green"}}>
+
+        {item.title}
+        </li>
  ));
 console.log(ListItem);
 
